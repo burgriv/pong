@@ -7,6 +7,8 @@ using TMPro;
 public class GameManager : MonoBehaviour
 {
     public Ball ball;
+    public Paddle playerPaddle;
+    public Paddle computerPaddle;
     public TMP_Text playerScoreText;
     public TMP_Text computerScoreText;
     private int _playerScore;
@@ -28,6 +30,16 @@ public class GameManager : MonoBehaviour
         _computerScore++;
         this.computerScoreText.text = _computerScore.ToString();
         this.ball.ResetPosition();
+        this.ball.AddStartingForce();
+    }
+
+    public void ResetGame() {
+        _playerScore = _computerScore = 0;
+        this.playerScoreText.text = _playerScore.ToString();
+        this.computerScoreText.text = _computerScore.ToString();
+        this.ball.ResetPosition();
+        this.playerPaddle.ResetPosition();
+        this.computerPaddle.ResetPosition();
         this.ball.AddStartingForce();
     }
 }

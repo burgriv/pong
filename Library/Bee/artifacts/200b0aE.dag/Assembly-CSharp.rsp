@@ -376,6 +376,7 @@
 "Assets/Scripts/ComputerPaddle.cs"
 "Assets/Scripts/GameManager.cs"
 "Assets/Scripts/Paddle.cs"
+"Assets/Scripts/PauseMenu.cs"
 "Assets/Scripts/PlayerPaddle.cs"
 "Assets/Scripts/ScoringZone.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
